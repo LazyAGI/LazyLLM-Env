@@ -5444,7 +5444,7 @@ test = ["enum34", "ipaddress", "mock", "pywin32", "wmi"]
 name = "psycopg2"
 version = "2.9.9"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
-optional = true
+optional = false
 python-versions = ">=3.7"
 files = [
     {file = "psycopg2-2.9.9-cp310-cp310-win32.whl", hash = "sha256:38a8dcc6856f569068b47de286b472b7c473ac7977243593a288ebce0dc89516"},
@@ -9324,10 +9324,10 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 type = ["pytest-mypy"]
 
 [extras]
-full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "llama-index", "llama-index-embeddings-huggingface", "llama-index-retrievers-bm25", "llama-index-storage-docstore-redis", "llama-index-storage-index-store-redis", "llama-index-storage-kvstore-redis", "llama-index-vector-stores-redis", "lmdeploy", "numpy", "pandas", "peft", "psycopg2", "rank-bm25", "redis", "redisvl", "scikit-learn", "sortedcontainers", "sqlalchemy", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
-standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "llama-index", "llama-index-embeddings-huggingface", "lmdeploy", "numpy", "pandas", "peft", "psycopg2", "rank-bm25", "scikit-learn", "sqlalchemy", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "llama-index", "llama-index-embeddings-huggingface", "llama-index-retrievers-bm25", "llama-index-storage-docstore-redis", "llama-index-storage-index-store-redis", "llama-index-storage-kvstore-redis", "llama-index-vector-stores-redis", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "redis", "redisvl", "scikit-learn", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "llama-index", "llama-index-embeddings-huggingface", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "scikit-learn", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "d3e1824aa4437b2970dfef0b1a27c5e7b81a19c07a528825a0bdb8bf7a96e356"
+content-hash = "955cd78b069e5655d308c9c274b6f45bd8a8fb543cf9e0af5875fb878bfcc484"
