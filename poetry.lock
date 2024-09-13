@@ -9324,10 +9324,10 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 type = ["pytest-mypy"]
 
 [extras]
-full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "llama-index", "llama-index-embeddings-huggingface", "llama-index-retrievers-bm25", "llama-index-storage-docstore-redis", "llama-index-storage-index-store-redis", "llama-index-storage-kvstore-redis", "llama-index-vector-stores-redis", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "redis", "redisvl", "scikit-learn", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
-standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "llama-index", "llama-index-embeddings-huggingface", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "scikit-learn", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "llama-index", "llama-index-embeddings-huggingface", "llama-index-retrievers-bm25", "llama-index-storage-docstore-redis", "llama-index-storage-index-store-redis", "llama-index-storage-kvstore-redis", "llama-index-vector-stores-redis", "lmdeploy", "numpy", "pandas", "peft", "psycopg2", "rank-bm25", "redis", "redisvl", "scikit-learn", "sortedcontainers", "sqlalchemy", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "llama-index", "llama-index-embeddings-huggingface", "lmdeploy", "numpy", "pandas", "peft", "psycopg2", "rank-bm25", "scikit-learn", "sqlalchemy", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "b79e50e82152e83307c89c2cd6943ffa06bf20290c78ae661f194b8c4a38a7c4"
+content-hash = "d3e1824aa4437b2970dfef0b1a27c5e7b81a19c07a528825a0bdb8bf7a96e356"
