@@ -5415,7 +5415,7 @@ files = [
 name = "psutil"
 version = "6.0.0"
 description = "Cross-platform lib for process and system monitoring in Python."
-optional = true
+optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
 files = [
     {file = "psutil-6.0.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:a021da3e881cd935e64a3d0a20983bda0bb4cf80e4f74fa9bfcb1bc5785360c6"},
@@ -9330,4 +9330,4 @@ standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "955cd78b069e5655d308c9c274b6f45bd8a8fb543cf9e0af5875fb878bfcc484"
+content-hash = "9d7525ab618e3cfed92c32450eafade801c6ababf713e2cbe8b875230fda1c29"
