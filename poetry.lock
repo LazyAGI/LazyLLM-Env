@@ -8971,4 +8971,4 @@ standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ad8b0b074e5160b7f07b3cf264d57b0cf729202c283285ab0d18b06101b25673"
+content-hash = "a2ee0c031a9829091516224df73a9bd25a4bb4031d526a6e6e30ad85a1916f7f"
