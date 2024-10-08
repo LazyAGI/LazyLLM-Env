@@ -8965,10 +8965,10 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 type = ["pytest-mypy"]
 
 [extras]
-full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "redis", "redisvl", "rotary-embedding-torch", "scikit-learn", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
-standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "lmdeploy", "numpy", "pandas", "peft", "rank-bm25", "rotary-embedding-torch", "scikit-learn", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+full = ["chattts", "collie-lm", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flash-attn", "funasr", "google", "huggingface-hub", "lazyllm-llamafactory", "lightllm", "lmdeploy", "pandas", "peft", "rank-bm25", "redis", "redisvl", "rotary-embedding-torch", "scikit-learn", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
+standard = ["chattts", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "funasr", "google", "lazyllm-llamafactory", "lmdeploy", "pandas", "peft", "rank-bm25", "rotary-embedding-torch", "scikit-learn", "timm", "torch", "torchvision", "transformers", "vllm", "wandb"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "d5ae7d42d199b1a36e2fd51fd1edb4fac3a91b5bb983117f11fd1475261be007"
+content-hash = "ad8b0b074e5160b7f07b3cf264d57b0cf729202c283285ab0d18b06101b25673"
