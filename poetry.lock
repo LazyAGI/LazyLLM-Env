@@ -9413,4 +9413,4 @@ standard = ["chattts", "ctranslate2", "datasets", "deepspeed", "diffusers", "fai
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c8a45f4e7027ed691d2e0292a455b4bf3b50d7c0bb36532e2d267c5be5291589"
+content-hash = "ce65c9d4d7b71c1e743cc024b34f5d32ba3820d34763f10445f51ed71bc15392"
