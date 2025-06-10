@@ -1530,18 +1530,18 @@ dev = ["autopep8", "flake8", "pytest"]
 
 [[package]]
 name = "diffusers"
-version = "0.30.2"
+version = "0.33.1"
 description = "State-of-the-art diffusion in PyTorch and JAX."
 optional = true
 python-versions = ">=3.8.0"
 files = [
-    {file = "diffusers-0.30.2-py3-none-any.whl", hash = "sha256:739826043147c2b59560944591dfdea5d24cd4fb15e751abbe20679a289bece8"},
-    {file = "diffusers-0.30.2.tar.gz", hash = "sha256:641875f78f36bdfa4b9af752b124d1fd6d431eadd5547fe0a3f354ae0af2636c"},
+    {file = "diffusers-0.33.1-py3-none-any.whl", hash = "sha256:027469e74f289338eb24127409f8d60d840b1b7ce4b27ffcd3134fd3b8431567"},
+    {file = "diffusers-0.33.1.tar.gz", hash = "sha256:fc7f140295d2ec82b1e7474b77bb7057fc0686c14eadc54ca0e52a66527e18a2"},
 ]
 
 [package.dependencies]
 filelock = "*"
-huggingface-hub = ">=0.23.2"
+huggingface-hub = ">=0.27.0"
 importlib-metadata = "*"
 numpy = "*"
 Pillow = "*"
@@ -1550,12 +1550,16 @@ requests = "*"
 safetensors = ">=0.3.1"
 
 [package.extras]
-dev = ["GitPython (<3.1.19)", "Jinja2", "accelerate (>=0.31.0)", "compel (==0.1.8)", "datasets", "flax (>=0.4.1)", "hf-doc-builder (>=0.3.0)", "invisible-watermark (>=0.2.0)", "isort (>=5.5.4)", "jax (>=0.4.1)", "jaxlib (>=0.4.1)", "k-diffusion (>=0.0.12)", "librosa", "parameterized", "peft (>=0.6.0)", "protobuf (>=3.20.3,<4)", "pytest", "pytest-timeout", "pytest-xdist", "requests-mock (==1.10.0)", "ruff (==0.1.5)", "safetensors (>=0.3.1)", "scipy", "sentencepiece (>=0.1.91,!=0.1.92)", "tensorboard", "torch (>=1.4)", "torchvision", "transformers (>=4.41.2)", "urllib3 (<=2.0.0)"]
+bitsandbytes = ["accelerate (>=0.31.0)", "bitsandbytes (>=0.43.3)"]
+dev = ["GitPython (<3.1.19)", "Jinja2", "accelerate (>=0.31.0)", "compel (==0.1.8)", "datasets", "flax (>=0.4.1)", "hf-doc-builder (>=0.3.0)", "invisible-watermark (>=0.2.0)", "isort (>=5.5.4)", "jax (>=0.4.1)", "jaxlib (>=0.4.1)", "k-diffusion (>=0.0.12)", "librosa", "parameterized", "peft (>=0.6.0)", "phonemizer", "protobuf (>=3.20.3,<4)", "pytest", "pytest-timeout", "pytest-xdist", "requests-mock (==1.10.0)", "ruff (==0.9.10)", "safetensors (>=0.3.1)", "scipy", "sentencepiece (>=0.1.91,!=0.1.92)", "tensorboard", "tiktoken (>=0.7.0)", "torch (>=1.4)", "torchvision", "transformers (>=4.41.2)", "urllib3 (<=2.0.0)"]
 docs = ["hf-doc-builder (>=0.3.0)"]
 flax = ["flax (>=0.4.1)", "jax (>=0.4.1)", "jaxlib (>=0.4.1)"]
-quality = ["hf-doc-builder (>=0.3.0)", "isort (>=5.5.4)", "ruff (==0.1.5)", "urllib3 (<=2.0.0)"]
-test = ["GitPython (<3.1.19)", "Jinja2", "compel (==0.1.8)", "datasets", "invisible-watermark (>=0.2.0)", "k-diffusion (>=0.0.12)", "librosa", "parameterized", "pytest", "pytest-timeout", "pytest-xdist", "requests-mock (==1.10.0)", "safetensors (>=0.3.1)", "scipy", "sentencepiece (>=0.1.91,!=0.1.92)", "torchvision", "transformers (>=4.41.2)"]
+gguf = ["accelerate (>=0.31.0)", "gguf (>=0.10.0)"]
+optimum-quanto = ["accelerate (>=0.31.0)", "optimum-quanto (>=0.2.6)"]
+quality = ["hf-doc-builder (>=0.3.0)", "isort (>=5.5.4)", "ruff (==0.9.10)", "urllib3 (<=2.0.0)"]
+test = ["GitPython (<3.1.19)", "Jinja2", "compel (==0.1.8)", "datasets", "invisible-watermark (>=0.2.0)", "k-diffusion (>=0.0.12)", "librosa", "parameterized", "phonemizer", "pytest", "pytest-timeout", "pytest-xdist", "requests-mock (==1.10.0)", "safetensors (>=0.3.1)", "scipy", "sentencepiece (>=0.1.91,!=0.1.92)", "tiktoken (>=0.7.0)", "torchvision", "transformers (>=4.41.2)"]
 torch = ["accelerate (>=0.31.0)", "torch (>=1.4)"]
+torchao = ["accelerate (>=0.31.0)", "torchao (>=0.7.0)"]
 training = ["Jinja2", "accelerate (>=0.31.0)", "datasets", "peft (>=0.6.0)", "protobuf (>=3.20.3,<4)", "tensorboard"]
 
 [[package]]
@@ -2340,6 +2344,20 @@ test-full = ["adlfs", "aiohttp (!=4.0.0a0,!=4.0.0a1)", "cloudpickle", "dask", "d
 tqdm = ["tqdm"]
 
 [[package]]
+name = "ftfy"
+version = "6.3.1"
+description = "Fixes mojibake and other problems with Unicode, after the fact"
+optional = true
+python-versions = ">=3.9"
+files = [
+    {file = "ftfy-6.3.1-py3-none-any.whl", hash = "sha256:7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083"},
+    {file = "ftfy-6.3.1.tar.gz", hash = "sha256:9b3c3d90f84fb267fe64d375a07b7f8912d817cf86009ae134aa03e1819506ec"},
+]
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
 name = "funasr"
 version = "1.1.6"
 description = "FunASR: A Fundamental End-to-End Speech Recognition Toolkit"
@@ -3072,6 +3090,55 @@ files = [
     {file = "ijson-3.3.0-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:33afc25057377a6a43c892de34d229a86f89ea6c4ca3dd3db0dcd17becae0dbb"},
     {file = "ijson-3.3.0-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:7914d0cf083471856e9bc2001102a20f08e82311dfc8cf1a91aa422f9414a0d6"},
     {file = "ijson-3.3.0.tar.gz", hash = "sha256:7f172e6ba1bee0d4c8f8ebd639577bfe429dee0f3f96775a067b8bae4492d8a0"},
+]
+
+[[package]]
+name = "imageio"
+version = "2.37.0"
+description = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
+optional = true
+python-versions = ">=3.9"
+files = [
+    {file = "imageio-2.37.0-py3-none-any.whl", hash = "sha256:11efa15b87bc7871b61590326b2d635439acc321cf7f8ce996f812543ce10eed"},
+    {file = "imageio-2.37.0.tar.gz", hash = "sha256:71b57b3669666272c818497aebba2b4c5f20d5b37c81720e5e1a56d59c492996"},
+]
+
+[package.dependencies]
+numpy = "*"
+pillow = ">=8.3.2"
+
+[package.extras]
+all-plugins = ["astropy", "av", "imageio-ffmpeg", "numpy (>2)", "pillow-heif", "psutil", "rawpy", "tifffile"]
+all-plugins-pypy = ["av", "imageio-ffmpeg", "pillow-heif", "psutil", "tifffile"]
+build = ["wheel"]
+dev = ["black", "flake8", "fsspec[github]", "pytest", "pytest-cov"]
+docs = ["numpydoc", "pydata-sphinx-theme", "sphinx (<6)"]
+ffmpeg = ["imageio-ffmpeg", "psutil"]
+fits = ["astropy"]
+full = ["astropy", "av", "black", "flake8", "fsspec[github]", "gdal", "imageio-ffmpeg", "itk", "numpy (>2)", "numpydoc", "pillow-heif", "psutil", "pydata-sphinx-theme", "pytest", "pytest-cov", "rawpy", "sphinx (<6)", "tifffile", "wheel"]
+gdal = ["gdal"]
+itk = ["itk"]
+linting = ["black", "flake8"]
+pillow-heif = ["pillow-heif"]
+pyav = ["av"]
+rawpy = ["numpy (>2)", "rawpy"]
+test = ["fsspec[github]", "pytest", "pytest-cov"]
+tifffile = ["tifffile"]
+
+[[package]]
+name = "imageio-ffmpeg"
+version = "0.6.0"
+description = "FFMPEG wrapper for Python"
+optional = true
+python-versions = ">=3.9"
+files = [
+    {file = "imageio_ffmpeg-0.6.0-py3-none-macosx_10_9_intel.macosx_10_9_x86_64.whl", hash = "sha256:9d2baaf867088508d4a3458e61eeb30e945c4ad8016025545f66c4b5aaef0a61"},
+    {file = "imageio_ffmpeg-0.6.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:b1ae3173414b5fc5f538a726c4e48ea97edc0d2cdc11f103afee655c463fa742"},
+    {file = "imageio_ffmpeg-0.6.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:1d47bebd83d2c5fc770720d211855f208af8a596c82d17730aa51e815cdee6dc"},
+    {file = "imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl", hash = "sha256:c7e46fcec401dd990405049d2e2f475e2b397779df2519b544b8aab515195282"},
+    {file = "imageio_ffmpeg-0.6.0-py3-none-win32.whl", hash = "sha256:196faa79366b4a82f95c0f4053191d2013f4714a715780f0ad2a68ff37483cc2"},
+    {file = "imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl", hash = "sha256:02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a"},
+    {file = "imageio_ffmpeg-0.6.0.tar.gz", hash = "sha256:e2556bed8e005564a9f925bb7afa4002d82770d6b08825078b7697ab88ba1755"},
 ]
 
 [[package]]
@@ -5577,13 +5644,13 @@ files = [
 
 [[package]]
 name = "optimum"
-version = "1.23.0"
+version = "1.16.2"
 description = "Optimum Library is an extension of the Hugging Face Transformers library, providing a framework to integrate third-party libraries from Hardware Partners and interface with their specific functionality."
 optional = true
 python-versions = ">=3.7.0"
 files = [
-    {file = "optimum-1.23.0-py3-none-any.whl", hash = "sha256:3d05deb1e23c5b8e9969146b70ccca0826d6e86a79fbb282c89ae52f6450c42a"},
-    {file = "optimum-1.23.0.tar.gz", hash = "sha256:c27ecb41a45e418392df3406e83ba4bd10f2d1cdd0b95e6ae0bc3268661978da"},
+    {file = "optimum-1.16.2-py3-none-any.whl", hash = "sha256:29ad8fe53b565646bb06d8779c398e0149d220570654acdf5e3790eb1aef790d"},
+    {file = "optimum-1.16.2.tar.gz", hash = "sha256:0ac278c94b94888ea3b68f6a426c836900621d29db1d176587a584fd43600ba9"},
 ]
 
 [package.dependencies]
@@ -5594,32 +5661,30 @@ numpy = "*"
 packaging = "*"
 sympy = "*"
 torch = ">=1.11"
-transformers = {version = ">=4.29", extras = ["sentencepiece"]}
+transformers = {version = ">=4.26.0", extras = ["sentencepiece"]}
 
 [package.extras]
 amd = ["optimum-amd"]
 benchmark = ["evaluate (>=0.2.0)", "optuna", "scikit-learn", "seqeval", "torchvision", "tqdm"]
-dev = ["Pillow", "accelerate", "black (>=23.1,<24.0)", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest (<=8.0.0)", "pytest-xdist", "requests", "rjieba", "ruff (==0.1.5)", "sacremoses", "scikit-learn", "timm", "torchaudio", "torchvision"]
+dev = ["Pillow", "accelerate", "black (>=23.1,<24.0)", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest", "pytest-xdist", "requests", "ruff (==0.1.5)", "sacremoses", "torchaudio", "torchvision"]
 diffusers = ["diffusers"]
 doc-build = ["accelerate"]
-exporters = ["onnx", "onnxruntime", "timm", "transformers (<4.46.0)"]
-exporters-gpu = ["onnx", "onnxruntime-gpu", "timm", "transformers (<4.46.0)"]
-exporters-tf = ["datasets (<=2.16)", "h5py", "numpy (<1.24.0)", "onnx", "onnxruntime", "tensorflow (>=2.4,<=2.12.1)", "tf2onnx", "timm", "transformers[sentencepiece] (>=4.26,<4.38)"]
+exporters = ["onnx", "onnxruntime", "timm"]
+exporters-gpu = ["onnx", "onnxruntime-gpu", "timm"]
+exporters-tf = ["h5py", "numpy (<1.24.0)", "onnx", "onnxruntime", "tensorflow (>=2.4,<=2.12.1)", "tf2onnx", "timm"]
 furiosa = ["optimum-furiosa"]
 graphcore = ["optimum-graphcore"]
-habana = ["optimum-habana", "transformers (>=4.43.0,<4.44.0)"]
-intel = ["optimum-intel (>=1.18.0)"]
-ipex = ["optimum-intel[ipex] (>=1.18.0)"]
-neural-compressor = ["optimum-intel[neural-compressor] (>=1.18.0)"]
-neuron = ["optimum-neuron[neuron] (>=0.0.20)", "transformers (>=4.36.2,<4.42.0)"]
-neuronx = ["optimum-neuron[neuronx] (>=0.0.20)", "transformers (>=4.36.2,<4.42.0)"]
-nncf = ["optimum-intel[nncf] (>=1.18.0)"]
-onnxruntime = ["datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime (>=1.11.0)", "protobuf (>=3.20.1)", "transformers (<4.46.0)"]
-onnxruntime-gpu = ["accelerate", "datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime-gpu (>=1.11.0)", "protobuf (>=3.20.1)", "transformers (<4.46.0)"]
-openvino = ["optimum-intel[openvino] (>=1.18.0)"]
+habana = ["optimum-habana", "transformers (>=4.33.0,<4.35.0)"]
+intel = ["optimum-intel (>=1.12.0)"]
+neural-compressor = ["optimum-intel[neural-compressor] (>=1.12.0)"]
+neuron = ["optimum-neuron[neuron]"]
+neuronx = ["optimum-neuron[neuronx]"]
+nncf = ["optimum-intel[nncf] (>=1.12.0)"]
+onnxruntime = ["datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime (>=1.11.0)", "protobuf (>=3.20.1)"]
+onnxruntime-gpu = ["accelerate", "datasets (>=1.2.1)", "evaluate", "onnx", "onnxruntime-gpu (>=1.11.0)", "protobuf (>=3.20.1)"]
+openvino = ["optimum-intel[openvino] (>=1.12.0)"]
 quality = ["black (>=23.1,<24.0)", "ruff (==0.1.5)"]
-quanto = ["optimum-quanto (>=0.2.4)"]
-tests = ["Pillow", "accelerate", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest (<=8.0.0)", "pytest-xdist", "requests", "rjieba", "sacremoses", "scikit-learn", "timm", "torchaudio", "torchvision"]
+tests = ["Pillow", "accelerate", "diffusers (>=0.17.0)", "einops", "invisible-watermark", "parameterized", "pytest", "pytest-xdist", "requests", "sacremoses", "torchaudio", "torchvision"]
 
 [[package]]
 name = "orjson"
@@ -10172,6 +10237,17 @@ files = [
 anyio = ">=3.0.0"
 
 [[package]]
+name = "wcwidth"
+version = "0.2.13"
+description = "Measures the displayed width of unicode strings in a terminal"
+optional = true
+python-versions = "*"
+files = [
+    {file = "wcwidth-0.2.13-py2.py3-none-any.whl", hash = "sha256:3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"},
+    {file = "wcwidth-0.2.13.tar.gz", hash = "sha256:72ea0c06399eb286d978fdedb6923a9eb47e1c486ce63e9b4e64fc18303972b5"},
+]
+
+[[package]]
 name = "weasel"
 version = "0.4.1"
 description = "Weasel: A small and easy workflow system"
@@ -10763,17 +10839,17 @@ colie = ["collie-lm", "peft", "tensorboard", "tensorboard-data-server", "torch"]
 deploy-all = ["huggingface-hub", "infinity-emb", "lmdeploy", "modelscope", "sentence-transformers", "vllm"]
 dev = ["flake8", "pytest"]
 finetune-all = ["appdirs", "collie-lm", "ctranslate2", "datasets", "deepspeed", "faiss-cpu", "fire", "flagembedding", "flash-attn", "huggingface-hub", "lazyllm-llamafactory", "loralib", "modelscope", "optimum", "pandas", "peft", "rotary-embedding-torch", "scikit-learn", "sentence-transformers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "wandb"]
-full = ["accelerate", "appdirs", "chattts", "chromadb", "collie-lm", "ctranslate2", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flagembedding", "flake8", "flash-attn", "funasr", "google", "huggingface-hub", "infinity-emb", "lazyllm-llamafactory", "lightllm", "lmdeploy", "loralib", "mcp", "modelscope", "openai-whisper", "optimum", "pandas", "peft", "pymilvus", "pymongo", "pymysql", "pytesseract", "pytest", "qwen-vl-utils", "rank-bm25", "rapidfuzz", "redis", "redisvl", "rotary-embedding-torch", "scikit-learn", "sentence-transformers", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "typer", "vllm", "wandb"]
+full = ["accelerate", "appdirs", "chattts", "chromadb", "collie-lm", "ctranslate2", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flagembedding", "flake8", "flash-attn", "ftfy", "funasr", "google", "huggingface-hub", "imageio", "imageio-ffmpeg", "infinity-emb", "lazyllm-llamafactory", "lightllm", "lmdeploy", "loralib", "mcp", "modelscope", "openai-whisper", "optimum", "pandas", "peft", "pymilvus", "pymongo", "pymysql", "pytesseract", "pytest", "qwen-vl-utils", "rank-bm25", "rapidfuzz", "redis", "redisvl", "rotary-embedding-torch", "scikit-learn", "sentence-transformers", "sortedcontainers", "tensorboard", "tensorboard-data-server", "timm", "torch", "torchvision", "transformers", "typer", "vllm", "wandb"]
 infinity = ["huggingface-hub", "infinity-emb", "modelscope"]
 lightllm = ["huggingface-hub", "lightllm", "modelscope"]
 llama-factory = ["accelerate", "datasets", "deepspeed", "lazyllm-llamafactory", "lmdeploy", "peft", "qwen-vl-utils", "tensorboard", "tensorboard-data-server", "torch", "transformers"]
 lmdeploy = ["huggingface-hub", "lmdeploy", "modelscope"]
 multimodal = ["chattts", "diffusers", "funasr", "openai-whisper", "pytesseract", "torch", "transformers"]
 rag-advanced = ["chromadb", "ctranslate2", "datasets", "flagembedding", "huggingface-hub", "infinity-emb", "modelscope", "pandas", "pymilvus", "pymongo", "pymysql", "pytesseract", "rank-bm25", "rapidfuzz", "redis", "redisvl", "sentence-transformers", "torch", "transformers"]
-standard = ["appdirs", "chattts", "chromadb", "ctranslate2", "datasets", "deepspeed", "faiss-cpu", "fire", "flagembedding", "flake8", "funasr", "google", "infinity-emb", "lmdeploy", "loralib", "modelscope", "optimum", "pandas", "peft", "pymilvus", "pytesseract", "pytest", "rank-bm25", "rapidfuzz", "rotary-embedding-torch", "scikit-learn", "sentence-transformers", "torch", "torchvision", "transformers", "typer", "vllm", "wandb"]
+standard = ["appdirs", "chattts", "chromadb", "ctranslate2", "datasets", "deepspeed", "diffusers", "faiss-cpu", "fire", "flagembedding", "flake8", "ftfy", "funasr", "google", "imageio", "imageio-ffmpeg", "infinity-emb", "lmdeploy", "loralib", "modelscope", "optimum", "pandas", "peft", "pymilvus", "pytesseract", "pytest", "rank-bm25", "rapidfuzz", "rotary-embedding-torch", "scikit-learn", "sentence-transformers", "torch", "torchvision", "transformers", "typer", "vllm", "wandb"]
 vllm = ["huggingface-hub", "modelscope", "vllm"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "57c1a0ca8eda4a03967b5d7e6c520a5072a07810b68c6149ec31c537622d0350"
+content-hash = "1054a43fa3fbcd406d37de5f01b081a194e890e20ef0221397898370651ac892"
