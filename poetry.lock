@@ -445,17 +445,18 @@ typecheck = ["mypy"]
 
 [[package]]
 name = "beautifulsoup4"
-version = "4.12.3"
+version = "4.13.4"
 description = "Screen-scraping library"
-optional = true
-python-versions = ">=3.6.0"
+optional = false
+python-versions = ">=3.7.0"
 files = [
-    {file = "beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"},
-    {file = "beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051"},
+    {file = "beautifulsoup4-4.13.4-py3-none-any.whl", hash = "sha256:9bbbb14bfde9d79f38b8cd5f8c7c85f4b8f2523190ebed90e950a8dea4cb1c4b"},
+    {file = "beautifulsoup4-4.13.4.tar.gz", hash = "sha256:dbb3c4e1ceae6aefebdaf2423247260cd062430a410e38c66f2baa50a8437195"},
 ]
 
 [package.dependencies]
 soupsieve = ">1.2"
+typing-extensions = ">=4.0.0"
 
 [package.extras]
 cchardet = ["cchardet"]
@@ -893,20 +894,20 @@ files = [
 
 [[package]]
 name = "chattts"
-version = "0.1.1"
+version = "0.2.4"
 description = "A generative speech model for daily dialogue"
 optional = true
 python-versions = "*"
 files = [
-    {file = "chattts-0.1.1.tar.gz", hash = "sha256:a4a77d4af6fdb40acb8ac39186b3fd822fcd4a8371cf2e3c6a37fdbf56b5b4de"},
+    {file = "chattts-0.2.4.tar.gz", hash = "sha256:7cb52721b1210a9132b75842b557495cb6a5737ecbb95f849164abc397339658"},
 ]
 
 [package.dependencies]
 numba = "*"
-numpy = "<2.0.0"
-omegaconf = ">=2.3.0"
+numpy = "<3.0.0"
 pybase16384 = "*"
 torch = ">=2.1.0"
+torchaudio = "*"
 tqdm = "*"
 transformers = ">=4.41.1"
 vector_quantize_pytorch = "*"
@@ -8751,7 +8752,7 @@ numpy = ["numpy"]
 name = "soupsieve"
 version = "2.6"
 description = "A modern CSS selector implementation for Beautiful Soup."
-optional = true
+optional = false
 python-versions = ">=3.8"
 files = [
     {file = "soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9"},
@@ -10852,4 +10853,4 @@ vllm = ["huggingface-hub", "modelscope", "vllm"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1054a43fa3fbcd406d37de5f01b081a194e890e20ef0221397898370651ac892"
+content-hash = "787d4225ad80b1f5d61c4121217fa0e1c6e23d62f67449e4f8d426e5733212d8"
