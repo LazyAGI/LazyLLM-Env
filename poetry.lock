@@ -2194,12 +2194,12 @@ pyflakes = ">=3.2.0,<3.3.0"
 
 [[package]]
 name = "flash-attn"
-version = "2.7.4.post1"
+version = "2.8.3"
 description = "Flash Attention: Fast and Memory-Efficient Exact Attention"
 optional = true
 python-versions = ">=3.9"
 files = [
-    {file = "flash_attn-2.7.4.post1.tar.gz", hash = "sha256:f03485c9a49a4d68d0733acdcad80ab0e72afa025a777fdc2966ceccf9d51765"},
+    {file = "flash_attn-2.8.3.tar.gz", hash = "sha256:1e71dd64a9e0280e0447b8a0c2541bad4bf6ac65bdeaa2f90e51a9e57de0370d"},
 ]
 
 [package.dependencies]
@@ -11562,4 +11562,4 @@ vllm = ["huggingface-hub", "modelscope", "vllm"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "2973f8b20b8d520f2d9f432926e42a3b627f5efb5ae099aa4f2a97bc732adc0e"
+content-hash = "4e465133ffa2bed9e645f8caabe0c9af31774842a5dbaad90526e8c7684ac954"
